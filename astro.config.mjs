@@ -8,7 +8,7 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [
     tailwind(),
-    solidJs({ include: ["**/solid/*"] }),
-    react({ include: ["**/react/*"] }),
+    solidJs({ include: ["**/solid/**", "**/routes.tsx"] }),
+    react({ include: ["**/react/**"] }),
   ],
 });
